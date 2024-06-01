@@ -12,7 +12,7 @@
             justify-content: center;
             align-items: flex-start;
             height: 100vh;
-            background-color: #f0f0f0; /* Adjust the background color as needed */
+            background-color: #f0f0f0;
             font-family: Arial, sans-serif;
         }
 
@@ -24,7 +24,7 @@
 
         .logo-container {
             position: absolute;
-            top: 20px; /* Adjust the distance from the top as needed */
+            top: 20px;
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -32,34 +32,34 @@
         }
 
         .profile-picture {
-            width: 150px; /* Adjust the size as needed */
-            height: 150px; /* Adjust the size as needed */
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
 
         .pb-name {
-            color: #333; /* Adjust the text color as needed */
+            color: #333;
             text-align: center;
-            font-weight: bold; /* Makes the text bold */
-            font-size: 30px; /* Adjust the font size as needed */
-            margin-top: 10px; /* Adds some spacing between the image and the name */
+            font-weight: bold;
+            font-size: 30px;
+            margin-top: 10px;
         }
 
         .pb-username {
-            color: #333; /* Adjust the text color as needed */
+            color: #333;
             text-align: center;
-            margin-top: 5px; /* Add a small margin to separate the username from the name */
-            font-weight: normal; /* Makes the text bold */
-            font-size: 15px; /* Adjust the font size as needed */
+            margin-top: 5px;
+            font-weight: normal;
+            font-size: 15px;
         }
 
         .product-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
-            margin-top: 200px; /* Adjust the top margin to create space between profile and products */
+            margin-top: 200px;
         }
 
         .product-item {
@@ -81,46 +81,42 @@
             font-weight: bold;
         }
 
-        .product-link {
-            display: none; /* Hide the Buy Now link */
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="logo-container">
-            <a rel="external nofollow ugc noopener noreferrer" href="https://www.instagram.com/kidsjoy.in" target="_Blank">
+        <header class="logo-container">
+            <a rel="noopener noreferrer" href="https://www.instagram.com/kidsjoy.in" target="_blank">
                 <img src="20240509_221037.jpg" alt="Kidsjoy.in Profile Picture" class="profile-picture">
             </a>
-            <span class="pb-name ts-title font-weight-bold d-block lnkbio-headingscolor">
-                Kidsjoy.in
-            </span>
-            <a rel="external nofollow ugc noreferer noopener" class="pb-username d-block lnkbio-headingscolor" href="https://www.instagram.com/kidsjoy.in" target="_blank">@kidsjoy.in</a>
-        </div>
-<!-- 
-        <h4>Welcome to</h4>
-        <h1>Kidsjoy.in</h1> -->
-        <br>
-        <br>
-        <br>
-        <div class="product-grid">
-                        <!-- Product Item Start -->
+            <span class="pb-name">Kidsjoy.in</span>
+            <a rel="noopener noreferrer" class="pb-username" href="https://www.instagram.com/kidsjoy.in" target="_blank">@kidsjoy.in</a>
+        </header>
+        <main class="product-grid">
             <div class="product-item">
-                <a href="https://amzn.to/3KJoV81"id="1" target="_blank">
-                    <img src="img.2.jpg"alt="Product 1">
+                <a href="https://amzn.to/3KJoV81" target="_blank">
+                    <img src="img.2.jpg" alt="Mini Car For Kids">
                 </a>
-                <div class="Mini Car For Kids">Product 1</div>
+                <div class="product-title">Mini Car For Kids</div>
             </div>
-             <!-- Product Item End -->
-            <!-- Product Item Start -->
             <div class="product-item">
-                <a href="https://amzn.to/450l6V7"id="2" target="_blank">
-                    <img src="img.1.jpg"alt="Product 2">
+                <a href="https://amzn.to/450l6V7" target="_blank">
+                    <img src="img.1.jpg" alt="Rechargeable Dancing Cactus">
                 </a>
-                <div class="Rechargeable Dancing Cactus">Product 2</div>
+                <div class="product-title">Rechargeable Dancing Cactus</div>
             </div>
-             <!-- Product Item End -->
-             
-
+        </main>
+    </div>
 </body>
 </html>
